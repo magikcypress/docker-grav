@@ -1,4 +1,4 @@
-# Official Docker Image for Grav
+# Not Official Docker Image for Grav for amd64
 
 This currently is pretty minimal and uses:
 
