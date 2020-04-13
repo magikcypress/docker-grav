@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-FROM php:7.3.8-apache
-LABEL maintainer="cyp <cyp@rouquin.me> (@cyp__)"
-=======
 FROM php:7.3-apache
 LABEL maintainer="Andy Miller <rhuk@getgrav.org> (@rhukster)"
->>>>>>> ea46286885da470ec299192eba3af078aaf928b1
 
 # Enable Apache Rewrite + Expires Module
 RUN a2enmod rewrite expires
@@ -48,13 +43,8 @@ RUN chown www-data:www-data /var/www
 USER www-data
 
 # Define Grav version and expected SHA1 signature
-<<<<<<< HEAD
 ENV GRAV_VERSION 1.6.23
 ENV GRAV_SHA1 c0ee03ebca3bb81e790274b52b72930737f0a761
-=======
-ENV GRAV_VERSION 1.6.19
-ENV GRAV_SHA1 231e6789e9575adccd6044aa0d0c72b8c2603a96
->>>>>>> ea46286885da470ec299192eba3af078aaf928b1
 
 # Install grav
 WORKDIR /var/www
